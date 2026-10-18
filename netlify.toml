@@ -1,7 +1,6 @@
 [build]
-  functions = "src"
+  edge_functions = "src"
 
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/maze"
-  status = 200
+[[edge_functions]]
+  path = "/*"
+  function = "maze"
