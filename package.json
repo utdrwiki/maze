@@ -1,0 +1,17 @@
+{
+	"name": "maze",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "netlify dev"
+	},
+	"devDependencies": {
+		"netlify-cli": "27.13.0"
+	},
+	"allowScripts": {
+		"esbuild": false,
+		"netlify-cli": false,
+		"sharp": false,
+		"unix-dgram": false
+	}
+}
