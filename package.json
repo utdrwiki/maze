@@ -3,7 +3,8 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "netlify dev"
+		"build": "rm -rf out/ && node build.js && cp public/* out/",
+		"deploy": "netlify deploy --dir=out --prod --no-build --skip-functions-cache --timeout=3600"
 	},
 	"devDependencies": {
 		"netlify-cli": "27.13.0"
